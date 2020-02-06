@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>sort array acoording to first character .</p>
+
+<button onclick="myFunction()">click to sort</button>
+
+<script>
+
+var strings = ["Banana", "Orange", "Apple", "Mango"];
+document.write("old array",'<br/>',strings);
+
+function myFunction() {
+  strings.sort();
+document.write("sorted array",'<br/>',strings);
+}
+
+</script>
+
+</body>
+</html>

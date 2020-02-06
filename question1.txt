@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>convert seconds into hours minutes and seconds.</p>
+
+<button onclick="second()">convert seconds</button>
+
+<p id="demo"></p>
+
+<script>
+function second() {
+var second=prompt("Enter number of Seconds")
+    if(isNaN(second)){
+    alert("enter only number")
+    }
+    else{
+    var h = Math.floor(second / 3600);
+    var m = Math.floor(second % 3600 / 60);
+    var s = Math.floor(second % 3600 % 60);
+
+    var hDisplay = h >= 0 ? h : "";
+    var mDisplay = m >= 0 ? m : "";
+    var sDisplay = s >= 0 ? s : "";
+    document.write("Hours"+"=",hDisplay," ","minutes"+"=",mDisplay," ","seconds"+"=",sDisplay)
+    }
+}
+</script>
+
+</body>
+</html>

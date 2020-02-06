@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>find XOR of a given range</p>
+
+<button onclick="myfunction()">click</button>
+
+<p id="demo"></p>
+
+<script>
+var lr=[]
+var res 
+function myfunction(){
+var testCases = prompt("enter number of testcases");
+      for(i=0;i<testCases;i++){
+       lr = prompt("enter values separated by space").split(" ");
+       res=xor(lr[0],lr[1])
+       if(res%2==0){
+        document.write("even",'<br/>')
+       }
+      else{
+       document.write("odd",'<br/>')
+      }
+    }
+  }
+  function xor(l,r)
+{
+return (findXor(lr[0]-1)^findXor(lr[1]))
+}
+function findXor(n) 
+{ 
+   var mod = n % 4; 
+  
+    
+    if (mod == 0) 
+        return n; 
+  
+   
+    else if (mod == 1) 
+        return 1; 
+  
+   
+    else if (mod == 2) 
+        return n + 1; 
+  
+
+    else if (mod == 3) 
+        return 0; 
+}
+
+</script>
+
+</body>
+</html>
